@@ -1,0 +1,395 @@
+
+* {
+    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0px;
+}
+/*Preloader*/
+.containerpre {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    z-index: 1000;
+}
+.carga {
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+}
+.carga img{
+    margin-bottom: 250px;
+}
+.preloader {
+    margin: 0;
+    position: absolute;
+    width: 400px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: darkgray;
+    text-align: left;
+}
+.preloader:before {
+    content: "";
+    position: absolute;
+    background-color: rgb(94, 94, 94);
+    width: 0;
+    height: 10px;
+    animation: preloader 1s;
+    border-radius: 5px;
+}
+@keyframes preloader {
+    100% {
+        width: 100%;
+    }
+}
+.cerrar {
+    transform: translateY(-100%);
+    transition: all 0.5s;
+}
+.navbar {
+    z-index: 100;
+}
+.bg-menu2 {
+    background-color: black;
+}
+.intro {
+    position: absolute;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+.intro h1{
+    color: white;
+    font-size: 100px;
+}
+.intro h3{
+    color: white;
+    padding-bottom: 20px;
+}
+.introtexto {
+    width: auto;
+    height: 40vh;
+}
+.profesion {
+    font-style: normal;
+    color: #78C2AD;
+}
+/* Responsive Intro*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .intro h1 {
+      font-size: 80px;
+    }
+    .intro h3 {
+      font-size: 30px;
+    }
+  
+  }
+  @media only screen and (max-width: 767px) {
+    .intro h1 {
+        font-size: 60px;
+      }
+      .intro h3 {
+        font-size: 20px;
+      }
+    
+    }
+.redes {}
+.redes .red {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    border: solid 2px #fff;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.redes .red:hover {
+    background-color: #78C2AD;
+    border-color: #78C2AD;
+    transition: all 0.5s;
+}
+.redes li {
+    display: inline;
+}
+.redes a{
+    color: #fff;
+}
+.redes i{
+    font-size: 20px;
+}
+
+.c2 {
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+    padding: 110px 25px;
+    min-height: 100vh;
+}
+.c2 h1{
+    color: #fff;
+}
+.c2 .row {
+    margin-top: 90px;
+}
+.service {
+    display: inline-block;
+    padding: 70px 25px;
+    text-align: center;
+    border-bottom: solid 10px #000;
+    margin-bottom: 30px;
+    background-color: rgb(20, 20, 20);
+    min-width: 250px;
+  }
+  .service:hover {
+      cursor: pointer;
+      border-bottom: solid 10px #78C2AD;
+      background-color: #fff;
+      transition: all 1s;
+  }
+  .service h4 {
+    padding-bottom: 15px;
+  }
+  .service:hover p {
+      color: black;
+  }
+  .service:hover h4{
+      color: #000;
+  }
+  .service:hover i{
+      color: #000;
+  }
+  .service i{
+    margin-bottom: 30px;
+    color: darkgrey;
+    padding-top: 35px;
+  }
+#particles-js{
+    background-image: url(../images/cabecera.jpg);
+	background-position: center;
+	background-attachment: contain;
+	background-size: cover;
+    height: 100vh;
+}
+.about {
+    text-align: center;
+    height: auto;
+    padding: 70px 25px;
+}
+.about li{
+    margin-bottom: 25px;
+    list-style: none;
+
+}
+.habilidades {
+    text-align: left;
+}
+.habilidades span {
+    font-weight: bold;
+    line-height: 27px;
+}
+.bar {
+    background-color: rgb(228, 228, 228);
+    display: block;
+    height: 8px;
+    overflow: hidden;
+}
+.bar span {
+    height: 8px;
+    float: left;
+    background-color:#78C2AD;
+}
+.skills{
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .skill-name{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 12px;
+    margin-bottom: 3px;
+  }
+  
+  .skill-bar{
+    height: 20px;
+    background: #cacaca;
+    border-radius: 8px;
+  }
+  
+  .skill-per{
+    height: 20px;
+    background-color: #78C2AD;
+    border-radius: 8px;
+    width: 0;
+    transition: 1s linear;
+    position: relative;
+  }
+  
+  .skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+  }
+  
+  .skill-per::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    top: -16px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+  }
+.hab1 {
+    width: 100%;
+    animation: hab1 2s;
+}
+.hab2 {
+    width: 90%;
+    animation: hab2 2s;
+}
+.hab3 {
+    width: 80%;
+    animation: hab3 2s;
+}
+.hab4 {
+    width: 85%;
+    animation: hab4 2s;
+}
+@keyframes hab1 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+@keyframes hab2 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}@keyframes hab3 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}@keyframes hab4 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+.about h1 {
+    margin-bottom: 45px;
+    margin-top: 20px;
+}
+.about h4 {
+    color: #78C2AD;
+}
+.perso {
+    margin-top: 30px;
+}
+.perso:hover { 
+    filter: blur(2px);
+    transform: rotate(10deg);
+    transition: transform 0.5s;
+}
+/*Publicaciones*/
+.publicaciones {
+    padding: 50px;
+    text-align: center;
+}
+.publicaciones .card {
+    margin: 15px;
+    text-align: left;
+}
+.publicaciones .card {
+    padding: 0;
+    min-width: 220px;
+}
+/*Cover separador*/
+.cover {
+    width: 100%;
+    height: 300px;
+    background-image: url(../images/contacto.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+/*Portfolio*/
+.portfolio {
+    text-align: center;
+    padding-top: 70px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/*Testimonios*/
+.testimonios {
+    width: 100%;
+    text-align: center;
+    padding: 110px 25px;
+    min-height: 100vh;
+}
+.testi {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 30px;
+    min-width: 250px;
+}
+.testitexto {
+    background-color: rgb(252, 250, 250);
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    font-style: oblique;
+    font-size: 18px;
+    margin-top: 60px;
+}
+.testitexto i {
+    font-size: 40px;
+    margin: 12px;
+    color: #78C2AD;
+}
+.nombretes {
+    padding-top: 35px;
+    text-align: left;
+}
+.nombretes h5 {
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+/*Contacto*/
+.contacto {
+    width: 100%;
+    text-align: center;
+    min-height: 100vh;
+    background-image: url(../images/contacto.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 130px 25px;
+}
